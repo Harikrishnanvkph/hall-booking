@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Guidlines</title>
+</head>
+<body>
+    <h1>PLEASE MAKE SURE YOU FOLLOW THE GUIDELINES TO USE THE API<span style="font-size : 20px"><h6 style="margin : 0px; font-weight : lighter">by HARI KRISHNAN V K</h6></span></h1>
+    <hr />
+    <h3><mark>ENDPOINTS:</mark></h3>
+    <p><b>/</b> - To Show API Guidlines [http request type : <b>GET</b>]</p>
+    <p><b>/room</b> - To Get all rooms [http request type : <b>GET</b>]</p>
+    <p><b>/room/create</b> - To Create a room (QUESTION 1) [http request type : <b>POST</b>]</p>
+    <p><b>/room/delete/:id</b> - To Delete a room [http request type : <b>DELETE</b>]</p>
+    <p><b>/room/book/:id</b> - To Book a room (QUESTION 2) [http request type : <b>POST</b>]</p>
+    <p><b>/room/bookingstatus</b> - To Get booking data for each room (QUESTION 3) [http request type : <b>GET</b>]</p>
+    <p><b>/room/customerdata</b> - To Get All customers with booked data (QUESTION 4) [http request type : <b>GET</b>]</p>
+    <p><b>/room/customerbookcount</b> - To Get All customers with booked data (QUESTION 5) [http request type : <b>GET</b>]</p>
+    <hr />
+    <h3>To POST data for booking a room follow below template</h3>
+    <h4 style="font-weight: lighter;">date should of format = <b>dd/mm/yyyy</b>
+        start_Time and end_Time should of format = <b>1 to 24 (considering 24 hours of day)</b>
+        Booked_Id = should be of nomenclature of string with structure as 
+        Room_id + start_Time+ end_Time (do not add these these are all should be concatenated as string)</h4>
+</body>
+</html>
